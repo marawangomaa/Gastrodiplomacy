@@ -1,0 +1,311 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "FuturaLT.ttf";
+  src: url('./../src//font/FuturaLT.ttf');
+}
+
+:root{
+font-family: "FuturaLT";
+}
+
+
+body{
+  background-color: white;
+  color: #77583c;
+
+}
+hr{
+color: #333;
+width: 100%;
+}
+a{
+text-decoration: none;
+
+}
+.radius{
+border-radius: 20px;
+}
+
+.introimg{
+width: 500px;
+padding-top: 40px;
+
+}
+
+.navcontainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-inline: auto;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 2rem auto; /* center it */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px; /* optional: rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* optional: subtle shadow */
+}
+
+
+.custom-video {
+  width: 100%;           /* Full width of its container */
+  max-width: 640px;      /* Maximum width */
+  height: auto;          /* Maintain aspect ratio */
+  border: 3px solid #333; /* Example border */
+  border-radius: 8px;     /* Rounded corners */
+  display: block;         /* Block-level element for centering */
+  margin: 0 auto;         /* Center horizontally */
+}
+
+.navbarx{
+background-color: white;
+color: #77583c;
+padding-block: 50px;
+margin-bottom: 20px;
+
+}
+.navbarx a{
+color: initial;
+}
+
+.navbarx a:hover{
+color: #a22f2f;
+}
+
+.icn{
+  width: 50px;
+}
+
+
+.textxx{
+  font-size: 100px;
+  color: inherit;
+  font-weight: bold;
+  text-align: start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin-left: 10px; */
+  margin-right: 10px;
+}
+.textxxx{
+  font-size: 50px;
+  color: inherit;
+  font-weight: lighter;
+  /* text-align: center; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.introp{
+/* color: white; */
+font-size: 25px;
+padding: 10px;
+}
+
+.home{
+background-image: url(./assets/img/home1.jpg);
+height: 100vh; /* Full viewport height */
+background-attachment: fixed; /* Keeps background fixed in place */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.section-head{
+background-color: white;
+color: #77583c;
+margin: 100px;
+width: fit-content;
+margin-inline: auto;
+transition: all 0.9s;
+}
+.section-head:hover{
+  background-color: #77583c;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.recipetext{
+text-align: center;
+background-color: white;
+margin: 100px;
+width: fit-content;
+margin-inline: auto;
+}
+
+.Recipe {
+background-image: url(../src/assets/img/r.jpg);
+height: 100vh; /* Full viewport height */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.hamburger {
+display: none;
+}
+
+.fourimg img{
+height: 450px;
+}
+.scale{
+transition: all 0.3s;
+cursor: pointer;
+}
+.scale:hover{
+transform: scale(1.04);
+}
+.p{
+transition: all 0.3s;
+cursor: pointer;
+}
+.p:hover{
+color: #a22f2f;
+font-size: large;
+}
+
+.Conclusion{
+background-image: url(./assets/img/end.jpg);
+height: 100vh; /* Full viewport height */
+background-attachment: fixed; /* Keeps background fixed in place */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.Reference{
+background-image: url(./assets/img/Reference.jpg);
+height: 100vh; /* Full viewport height */
+background-attachment: fixed; /* Keeps background fixed in place */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+/* Styles for small screens */
+@media (max-width: 576px) {
+.textxx {
+  font-size: 50px;
+  text-align: center;
+  margin: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.textxxx {
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.container {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.custom-video {
+  max-width: 100%;
+}
+
+.hamburger {
+  display: block;
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Off-canvas menu for mobile */
+.navbar-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* transform: translateX(100%); */
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar-nav.active {
+  /* transform: translateX(0); */
+  left: -100%;
+}
+.home{
+background-image: url(./assets/img/home2.jpg);
+  
+}
+.fourimg img{
+  height: auto;
+  }
+}
+
+/* New media query for medium screens */
+@media (min-width: 577px) and (max-width: 992px) {
+/* Adjust text sizes */
+.textxx {
+  font-size: 80px;
+  text-align: center;
+  margin: 10px;
+}
+
+.textxxx {
+  font-size: 35px;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Adjust container margins/paddings if needed */
+.navcontainer {
+  padding: 0 20px;
+}
+
+/* Optionally adjust the navbar layout for medium screens if needed */
+.navbarx {
+  padding-block: 30px;
+}
+
+/* You might want to show a simplified menu or change the layout */
+.navbar-nav {
+  flex-direction: row;
+  position: static; /* Let it flow normally */
+  transform: none;
+  transition: none;
+}
+
+/* Hide hamburger on medium screens */
+.hamburger {
+  display: none;
+}
+.home{
+  background-image: url(./assets/img/home2.jpg);
+    
+  }
+}
+
+
