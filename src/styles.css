@@ -211,7 +211,7 @@ background-size: cover;
 
 
 /* Styles for small screens */
-@media (max-width: 576px) {
+@media (max-width: 630px) {
 .textxx {
   font-size: 50px;
   text-align: center;
@@ -280,7 +280,7 @@ background-image: url(./assets/img/home2.jpg);
 }
 
 /* New media query for medium screens */
-@media (min-width: 577px) and (max-width: 992px) {
+@media (min-width: 631px) and (max-width: 992px) {
 /* Adjust text sizes */
 .textxx {
   font-size: 80px;
