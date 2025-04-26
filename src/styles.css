@@ -35,7 +35,7 @@ padding-top: 40px;
 
 .navcontainer{
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: center;
 margin-inline: auto;
 }
@@ -191,6 +191,14 @@ background-size: cover;
 }
 .Reference{
 background-image: url(./assets/img/Reference.jpg);
+height: 100vh; /* Full viewport height */
+background-attachment: fixed; /* Keeps background fixed in place */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.jollofrice{
+background-image: url(./assets/img/jollofrice.jpg);
 height: 100vh; /* Full viewport height */
 background-attachment: fixed; /* Keeps background fixed in place */
 background-position: center;
